@@ -20,7 +20,7 @@ public:
 
 	std::string getName() const { return mName; }
 
-	virtual void print(std::stringstream& builder) const override {
+	virtual void print(std::ostream& builder) const override {
 		builder << mName;
 	}
 

@@ -23,7 +23,7 @@ public:
 	{
 	}
 
-	virtual void print(std::stringstream& builder) const override {
+	virtual void print(std::ostream& builder) const override {
 		builder << "(";
 		mCondition->print(builder);
 		builder << " ? ";

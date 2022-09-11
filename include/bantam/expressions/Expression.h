@@ -1,7 +1,7 @@
 #ifndef EXPRESSION_H
 #define EXPRESSION_H
 
-#include <sstream>
+#include <ostream>
 
 namespace bantam
 {
@@ -17,7 +17,7 @@ public:
 	/**
 	 * Pretty-print the expression to a string.
 	 */
-	virtual void print(std::stringstream& builder) const = 0;
+	virtual void print(std::ostream& builder) const = 0;
 };
 
 }
